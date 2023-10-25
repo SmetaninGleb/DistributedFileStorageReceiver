@@ -4,6 +4,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 files_storage/
+.env
 
 ### STS ###
 .apt_generated
