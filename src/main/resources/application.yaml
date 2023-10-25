@@ -1,21 +1,18 @@
 spring:
   rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
+    host: ${rabbitmq_host}
+    port: ${rabbitmq_port}
+    username: ${rabbitmq_username}
+    password: ${rabbitmq_password}
 
 server:
-  port: 8081
+  port: ${server_port}
 
 config:
-  storage_directory: ./files_storage
+  storage_directory: ${files_storage_directory}
   rabbitmq:
-    receive_queue: sender_1
-    sender_exchange_name: sender
-    document_list_queue_name: document_list
-    document_queue_name: document
-    filename_header_name: filename
-    chat_id_header_name: chat_id
-    messages:
-      get_document_list: get_document_list
+    receive_queue: ${receive_file_queue_name}
+    document_list_queue_name: ${document_list_queue_name}
+    document_queue_name: ${document_queue_name}
+    filename_header_name: ${filename_header_name}
+    chat_id_header_name: ${chat_id_header_name}
