@@ -16,9 +16,6 @@ public class FileServiceImpl implements FileService {
 
     @Override
     public void saveFile(byte[] fileBytes, String filename, String chatId) {
-        System.out.println(fileStorageDirectory);
-        System.out.println(filename);
-        System.out.println(chatId);
         String finalFileName = fileStorageDirectory
                 .concat("/")
                 .concat(chatId)
