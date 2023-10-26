@@ -30,4 +30,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: glebsmetanin/distributed_file_storage_sender:latest
+          tags: glebsmetanin/distributed_file_storage_receiver:latest
